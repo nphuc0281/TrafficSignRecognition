@@ -1,0 +1,1 @@
+Dùng để tạm thời lưu ảnh nếu cần
