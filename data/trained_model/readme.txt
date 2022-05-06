@@ -1,1 +1,0 @@
-Dùng để lưu các tệp model đã huấn luyện
