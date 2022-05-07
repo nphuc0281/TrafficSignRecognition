@@ -22,7 +22,6 @@ RED = (0, 0, 255)
 
 def draw_label(input_image, label, left, top):
     """Draw text onto image at location."""
-
     # Get text size.
     text_size = cv2.getTextSize(label, FONT_FACE, FONT_SCALE, THICKNESS)
     dim, baseline = text_size[0], text_size[1]
@@ -119,5 +118,4 @@ def detect(frame, classes, net):
     detections = pre_process(frame, net)
     img, indices = post_process(frame.copy(), detections, classes)
 
-    img = cv2.resize(img, (INPUT_WIDTH, INPUT_HEIGHT), interpolation=cv2.INTER_AREA)
     return img, indices
